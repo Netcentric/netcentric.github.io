@@ -63,8 +63,9 @@ description = ""
 author = "Themefisher"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
-# copyright
-copyright = "Netcentric, A Cognizant Digital Business"
+[params.copyright]
+  text = "Netcentric, A Cognizant Digital Business"
+  link = "https://www.netcentric.biz/"
 
 # Preloader
 [params.preloader]
@@ -79,10 +80,6 @@ enable = false
 [params.cookies]
 enable = false
 expire_days = 2
-
-############################# Footer ########################
-[params.footer]
-content = "Netcentric is an Adobe Platinum Solution Partner with deep expertise in building scalable digital experience solutions for our clients and we love 💜 cutting-edge technology to serve our customers best. We value open source 🙌 and we closely collaborate with Adobe on shared interest projects of the Apache Software Foundation, in Adobe’s open source space and in our own space here on Github. We invite everyone to contribute and provide feedback to our open source work - get in touch with us! 🙇‍♂️ 🚀"
 
 
 ############################# post share ###################
