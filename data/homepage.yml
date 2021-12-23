@@ -5,155 +5,107 @@ banner:
   image : "images/about/book.png"
   content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis lacinia justo, at consequat quam viverra vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam non porta urna, ac pulvinar odio. Curabitur hendrerit blandit faucibus."
 
-######################## Book Preview ##########################
-preview:
+
+########################## Featured Projects ##############################
+featured:
   enable : true
-  pagePreview:
-    # page preview loop
-    - image : "images/about/book_page.png"
-    - image : "images/about/book_page2.png"
-    - image : "images/about/book_page.png"
-
-  title : "Look Inside the book"
-  content : "
-  This lovely, well-written book is concerned with creating typography and is essential for professionals who regularly work for clients.
-
-
-  Dolor quam consectetur corrupti, dignissimos sequi. Nihil totam alias, ipsa facere quibusdam, modi accusamus quod quae quaerat.
-  "
-
-  inside:
-    # book inside item loop
-    - insideItem : "7 Chapter"
-    - insideItem : "Explained Details"
-    - insideItem : "Clear Understanding"
-    - insideItem : "Best practices"
-
-  # button
-  button:
-    enable : true
-    label : "Purchase on Amazon"
-    link : "#"
-
-
-########################## Service ##############################
-service:
-  enable : true
-  serviceItem:
+  title: "Featured Projects"
+  featuredItem:
     # service item loop
-    - title : "Experience"
-      icon : "ti-microphone" # themify icon pack : https://themify.me/themify-icons
-      content : "Must explain to you how this denouncing praisig pain was give you explain to you how."
+    - title : "HTL Style Guide"
+      icon : "ti-wand" # themify icon pack : https://themify.me/themify-icons
+      content : "A style guide for the HTML Template Language (HTL), the templating language use by the Adobe Experience Manager "
+      link: "https://github.com/Netcentric/aem-htl-style-guide"
 
     # service item loop
-    - title : "Marketing Goals"
-      icon : "ti-rocket" # themify icon pack : https://themify.me/themify-icons
-      content : "Must explain to you how this denouncing praisig pain was give you explain to you how."
+    - title : "Access Control Tool"
+      icon : "ti-user" # themify icon pack : https://themify.me/themify-icons
+      content : "Rights and roles management for Adobe Experience Manager made easy."
+      link : "https://github.com/Netcentric/accesscontroltool"
 
     # service item loop
-    - title : "Targetting Vission"
-      icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
-      content : "Must explain to you how this denouncing praisig pain was give you explain to you how."
+    - title : "Front End Build"
+      icon : "ti-settings" # themify icon pack : https://themify.me/themify-icons
+      content : "All in one solution for modern Frontend projects, with special focus on AEM (Adobe Experience Manager)"
+      link : "https://github.com/Netcentric/fe-build"
 
 
-######################### Quote #############################
-quote:
+
+
+
+######################### projects ##########################
+projects:
   enable : true
-  quote: "It's simply the best guide to making money online ever released which only a fool would ignore."
-  quoteBy: "John Smith"
+  title : "Might Also Interest you"
+  subtitle : "We have a long list of open source projects"
+  project:
+   
+    - title : "Pickaxe Security Scanner"
+      content : "A fast and customizable security scan library"
+      link : "https://github.com/Netcentric/pickaxe-security-scanner"
+
+    - title : "Stylelink-config"
+      content : "Netcentric's coding and style rules for Stylelint"
+      link : "https://github.com/Netcentric/stylelint-config"
+    
+    - title : "NPM Package Template"
+      content : "Template repo for NPM packages"
+      link : "https://github.com/Netcentric/npm-package-template"
+
+    - title : "AEM Cloud Validator"
+      content : "Jackrabbit FileVault validator which verifies that a package complies with the AEM as a Cloud Service deployment restrictions"
+      link : "https://github.com/Netcentric/aem-cloud-validator"
+
+    - title : "Healthcheck Migration Kit"
+      content : "Allows to migrate an AEM 6.4/6.5 instance to Felix Health Checks"
+      link : "https://github.com/Netcentric/healthcheck-migration-kit"
+
+    - title : "Vault Upgrade Hook"
+      content : "An easy way to add additional logic to the installation of content packages."
+      link : "https://github.com/Netcentric/vault-upgrade-hook"
+
+    - title : "AEM Node Types"
+      content : "Provides a CND file with all Node Types and Namespaces defined in AEM"
+      link : "https://github.com/Netcentric/aem-nodetypes"
+
+    - title : "AEM Classification"
+      content : "Validator and classification maps for AEM Content Classification"
+      link : "https://github.com/Netcentric/aem-classification"
+
+    - title : "AEM Taggable Image"
+      content : "Taggable Image Component for Adobe Experience Manager"
+      link : "https://github.com/Netcentric/aem-taggable-image"
+
+    - title : "Apply Server"
+      content : "Deploy to servers/run scripts on servers via http"
+      link : "https://github.com/Netcentric/apply-server"
+
+    - title : "Maven-ext-repos-from-env"
+      content : "Allows to auto-configure maven repositories from system environment"
+      link : "https://github.com/Netcentric/maven-ext-repos-from-env"
+
+    - title : "System env install hook"
+      content : "Elastic AEM instances made easy."
+      link : "https://github.com/Netcentric/system-env-install-hook"
+
+    - title : "Cloudformation IAC"
+      content : "CloudFormation framework for AWS based project infrastructure"
+      link : "hhttps://github.com/Netcentric/cloudformation-iac"
+
+    - title : "AEMMJML"
+      content : "mjml for Adobe Experience Manager"
+      link : "https://github.com/Netcentric/aemmjml"
+
+    - title : "ProgrUX"
+      content : "A Progressive User Experience Library."
+      link : "https://github.com/Netcentric/progux"
+
+    - title : "ProgrUX Demo Site"
+      content : "Documentation/marketing website for ProgUX Library"
+      link : "https://github.com/Netcentric/progux-demo-site"
 
 
-######################### Chapters ##########################
-chapters:
-  enable : true
-  title : "Full Chapter Overview"
-  subtitle : "Libero atque veniam molestiae ipsa aliquid quam facilis dolore."
-  chapter:
-    # chapter preview loop
-    - title : "Chapter 1"
-      content : "Tips on scouting the city and making the most out of your three-month tourist visa."
 
-    # chapter preview loop
-    - title : "Chapter 2"
-      content : "Tips on scouting the city and making the most out of your three-month tourist visa."
-
-    # chapter preview loop
-    - title : "Chapter 3"
-      content : "Calculating your cost of living, with an overview of NYC neighborhoods and average rent prices. Includes tips on when to move to NYC."
-
-    # chapter preview loop
-    - title : "Chapter 4"
-      content : "Calculating your cost of living, with an overview of NYC neighborhoods and average rent prices. Includes tips on when to move to NYC."
-
-    # chapter preview loop
-    - title : "Chapter 5"
-      content : "Tips on scouting the city and making the most out of your three-month tourist visa."
-
-    # chapter preview loop
-    - title : "Chapter 6"
-      content : "Tips on scouting the city and making the most out of your three-month tourist visa."
-
-
-########################## Revews ###########################
-reviews:
-  enable : true
-  title : "What people are saying"
-  subtitle : "Amazing reviews illo tenetur laboriosam excepturi velit in, temporibus ab rem dicta sint obcaecati!"
-  review:
-    # review item loop
-    - name : "Barrow Hasi"
-      image : "images/client/test-1.jpg" # image size 80*80 px
-      designation : "Sunrise ten"
-      rating : "five" # rating from one to five
-      content : "Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam."
-
-    # review item loop
-    - name : "Nilam Arthur"
-      image : "images/client/test-2.jpg" # image size 80*80 px
-      designation : "Sunrise ten"
-      rating : "four" # rating from one to five
-      content : "Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam."
-
-    # review item loop
-    - name : "Barrow Hasi"
-      image : "images/client/test-1.jpg" # image size 80*80 px
-      designation : "Sunrise ten"
-      rating : "five" # rating from one to five
-      content : "Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam."
-
-    # review item loop
-    - name : "Nilam Arthur"
-      image : "images/client/test-2.jpg" # image size 80*80 px
-      designation : "Sunrise ten"
-      rating : "four" # rating from one to five
-      content : "Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam."
-
-
-#################################### device ################################
-devices:
-  enable : true
-  title : "Read it on your favorite device!"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod, nobis repudiandae! In
-          commodi accusamus molestiae, sunt, tempora fugiat doloribus sint quisquam illo numquam corporis
-          tenetur necessitatibus expedita eius, sed."
-  image : "images/about/ipad.jpg"
-  feature:
-    # feature item loop
-    - title : "Take a sneak peak insight"
-      icon : "ti-bar-chart" # themify icon pack : https://themify.me/themify-icons
-      content : "Sed laborum omnis earum facere culpa optio natus quaerat minus."
-
-    # feature item loop
-    - title : "Reporting & Analysis"
-      icon : "ti-write" # themify icon pack : https://themify.me/themify-icons
-      content : "Sed laborum omnis earum facere culpa optio natus quaerat minus."
-
-
-  # button
-  button:
-    enable : true
-    label : "Purchase on amazon"
-    link : "#"
 
 ######################################## author #############################
 author:
