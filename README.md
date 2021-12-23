@@ -7,7 +7,7 @@ Netcentric Open Source Site
 - [x] Import theme
 - [x] Create Page / Blog structure
 - [x] Add basic NC values to configuration
-- [ ] Add NC Logo
+- [x] Add NC Logo
 - [ ] Add some NC color touches
 - [ ] Add Homepage content
 - [ ] Add Homepage meta description
@@ -17,7 +17,7 @@ Netcentric Open Source Site
 - [ ] Add About content
 - [ ] Add Projects Content
 - [ ] Remove demo content
-- [ ] Remove demo content images
+- [x] Remove demo content images
 - [ ] See if we can unused JS/CSS
 
 ## Contribute
