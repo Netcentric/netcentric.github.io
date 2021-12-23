@@ -10,7 +10,7 @@
         <div class="main-banner">
           <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
           <p class="mb-4">{{ .content | markdownify }}</p>
-          <a class="snipcart-add-item btn btn-main mt-2" href="{{ .cta.link }}" rel="noopener">
+          <a title="{{ .cta.text }}" class="snipcart-add-item btn btn-main mt-2" href="{{ .cta.link }}" rel="noopener">
             {{ .cta.text }} <i class="ti-angle-right ml-3"></i>
         </a>
         </div>
