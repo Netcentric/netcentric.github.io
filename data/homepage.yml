@@ -47,7 +47,7 @@ projects:
       content : "A fast and customizable security scan library"
       link : "https://github.com/Netcentric/pickaxe-security-scanner"
 
-    - title : "Stylelink-config"
+    - title : "Stylelint-config"
       content : "Netcentric's coding and style rules for Stylelint"
       link : "https://github.com/Netcentric/stylelint-config"
     
