@@ -103,7 +103,7 @@ projects:
       content : "A Progressive User Experience Library."
       link : "https://github.com/Netcentric/progux"
 
-    - title : "ProgrUX Demo Site"
+    - title : "ProgUX Demo Site"
       content : "Documentation/marketing website for ProgUX Library"
       link : "https://github.com/Netcentric/progux-demo-site"
 
