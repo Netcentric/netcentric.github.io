@@ -1,5 +1,6 @@
 # Hugo build
 public
+resources/_gen
 
 # Logs
 logs
