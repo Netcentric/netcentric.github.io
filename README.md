@@ -6,7 +6,6 @@
 - [x] Create Page / Blog structure
 - [x] Add basic NC values to configuration
 - [x] Add NC Logo
-- [ ] Add some NC color touches
 - [x] Add Homepage content
 - [x] Add Homepage meta description
 - [x] Add Homepage meta title
@@ -15,6 +14,8 @@
 - [x] Add About content
 - [x] Remove demo content
 - [x] Remove demo content images
+- [ ] Add some NC color touches
+- [ ] Get rid of the SAsS mixins for transforms, etc.
 - [ ] See if we can unused JS/CSS
 - [ ] Performance checks
 
