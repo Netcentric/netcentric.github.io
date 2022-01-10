@@ -12,13 +12,14 @@ Netcentric Open Source Site
 - [ ] Add Homepage content
 - [ ] Add Homepage meta description
 - [ ] Add Homepage meta title
-- [ ] Add footer links back to NC site
+- [x] Add footer links back to NC site
 - [ ] Add link to Github Org
 - [ ] Add About content
 - [ ] Add Projects Content
 - [ ] Remove demo content
 - [x] Remove demo content images
 - [ ] See if we can unused JS/CSS
+- [ ] Performance checks
 
 ## Contribute
 

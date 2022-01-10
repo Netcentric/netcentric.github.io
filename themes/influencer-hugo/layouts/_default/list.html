@@ -2,15 +2,16 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="section blog-wrap border-bottom">
+<section class="section blog-wrap">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-12">
         <div class="row">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
-          <div class="col-sm-6">
-            {{ .Render "post"}}
+          <div class="col-12">
+            {{ .Scratch.Set "blog" true }}
+            {{ .Render "post" }}
           </div>
           {{ end }}
         </div>
@@ -18,7 +19,6 @@
           {{ template "_internal/pagination.html" . }}
         </div>
       </div>
-      {{ partial "sidebar.html" . }}
     </div>
   </div>
 </section>

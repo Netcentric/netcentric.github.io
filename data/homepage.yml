@@ -8,11 +8,10 @@ banner:
     text: "Checkout our repos"
     link: "https://github.com/orgs/Netcentric/repositories"
 
-
 ########################## Featured Projects ##############################
 featured:
   enable : true
-  title: "Featured Projects"
+  title: "Featured projects"
   featuredItem:
     # service item loop
     - title : "HTL Style Guide"
@@ -32,17 +31,13 @@ featured:
       content : "All in one solution for modern Frontend projects, with special focus on AEM (Adobe Experience Manager)"
       link : "https://github.com/Netcentric/fe-build"
 
-
-
-
-
 ######################### projects ##########################
 projects:
   enable : true
   title : "Might Also Interest you"
   subtitle : "We have a long list of open source projects"
   project:
-   
+
     - title : "Pickaxe Security Scanner"
       content : "A fast and customizable security scan library"
       link : "https://github.com/Netcentric/pickaxe-security-scanner"
@@ -50,7 +45,7 @@ projects:
     - title : "Stylelint-config"
       content : "Netcentric's coding and style rules for Stylelint"
       link : "https://github.com/Netcentric/stylelint-config"
-    
+
     - title : "NPM Package Template"
       content : "Template repo for NPM packages"
       link : "https://github.com/Netcentric/npm-package-template"
@@ -107,97 +102,9 @@ projects:
       content : "Documentation/marketing website for ProgUX Library"
       link : "https://github.com/Netcentric/progux-demo-site"
 
-
-
-
-######################################## author #############################
-author:
-  enable : false
-  image : "images/about/home-1.jpg"
-  name : "Yasin Arafat"
-  designation : "A technical Writer"
-  content : "
-  Do you want to be even more successful? Learn to love learn and growth. The more efort you put into improving your skills, the bigger the payoff you will get.
-
-
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-
-  # signature
-  signature : "images/about/2.png"
-
-
-################################ Awards #####################################
-awards:
-  enable : false
-  title : "We are award winner best selling book among the top rated 10 books!"
-  award:
-    # award item loop
-    - title : "International award"
-      image : "images/about/award-1.png"
-
-    # award item loop
-    - title : "Meritorious award"
-      image : "images/about/award-2.png"
-
-    # award item loop
-    - title : "Best book award"
-      image : "images/about/award-3.png"
-
-    # award item loop
-    - title : "Excellence award"
-      image : "images/about/award-4.png"
-
-
-############################# Other books ###############################
-otherBooks:
-  enable : false
-  title : "Others books by the author"
-  subtitle : "Laboriosam eos aperiam excepturi accusamus velit repudiandae sit rem incidunt, similique
-            facere quas blanditiis."
-  book:
-    # books loop
-    - image : "images/about/b-1.jpg"
-      link : "#"
-
-    # books loop
-    - image : "images/about/b-2.jpg"
-      link : "#"
-
-    # books loop
-    - image : "images/about/b-3.jpg"
-      link : "#"
-
-    # books loop
-    - image : "images/about/b-4.jpg"
-      link : "#"
-
 ################################ Blog ###################################
 blog:
   enable : true
-  title : "Our insights and articles"
-  subtitle : "Laboriosam eos aperiam excepturi accusamus velit repudiandae sit rem incidunt, similique facere quas blanditiis."
+  title : "Blog"
+  subtitle : "Updates and milestones of our open source projects"
   # blog post comes from 'content/blog'
-
-################################# Contact ##############################
-contact:
-  enable : false
-  title : "Contact Us"
-  subtitle : "Whether you have questions or you would just like to say hello, contact us.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, atque!"
-  contactItem:
-    # contact Item loop
-    - title : "Contact Quickly"
-      icon : "ti-headphone-alt" # themify icon pack : https://themify.me/themify-icons
-      list:
-        - listItem : "+23-68017684"
-
-    # contact Item loop
-    - title : "Email"
-      icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
-      list:
-        - listItem : "startor@support.com"
-
-    # contact Item loop
-    - title : "Location"
-      icon : "ti-location-pin" # themify icon pack : https://themify.me/themify-icons
-      list:
-        - listItem : "397 Lake forest drive street USA"

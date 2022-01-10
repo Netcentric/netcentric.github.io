@@ -40,7 +40,7 @@ paginate = 6
 
   [[menu.main]]
   name = "Projects"
-  URL = "projects"
+  URL = "https://github.com/orgs/Netcentric/repositories"
   weight = 2
 
   [[menu.main]]
