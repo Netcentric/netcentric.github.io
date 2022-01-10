@@ -1,0 +1,148 @@
+
+{{ define "main" }}
+
+<!-- Banner -->
+{{ if .Site.Data.homepage.banner.enable }}
+{{ with .Site.Data.homepage.banner }}
+<section class="banner-main py-7" id="banner">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12">
+        <div class="main-banner">
+          <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
+          <p class="mb-4">{{ .content | markdownify }}</p>
+          <a title="{{ .cta.text }}" class="snipcart-add-item btn btn-main mt-2" href="{{ .cta.link }}" rel="noopener">
+            {{ .cta.text }} <i class="ti-angle-right ml-3"></i>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!--Featured -->
+{{ if .Site.Data.homepage.featured.enable }}
+{{ with .Site.Data.homepage.featured }}
+<section class="pt-4 section-bottom" id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <h2 class="text-lg">{{ .title | markdownify }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      {{ range .featuredItem }}
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <a href="{{ .link | safeURL }}" >
+        <div class="service-block mb-4 mb-lg-0">
+          <i class="{{ .icon }} text-danger"></i>
+          <h4 class="mb-3 mt-4">{{ .title | markdownify }}</h4>
+          <p class="mb-0">{{ .content | markdownify }}</p>
+        </div>
+      </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+<!-- Projects -->
+{{ if .Site.Data.homepage.projects.enable }}
+{{ with .Site.Data.homepage.projects }}
+<section class="section chapter" id="chapter">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <h2 class="text-lg">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {{ range .project }}
+      <div class="col-sm-6">
+        <div class="chapter-item">
+          <a href="{{ .link | safeURL }}" >
+          <h4>{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+<!-- Latest blog -->
+{{ if .Site.Data.homepage.blog.enable }}
+<section class="section blog-home border-top" id="blog">
+  <div class="container">
+    {{ with .Site.Data.homepage.blog }}
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="section-heading text-center">
+          <h2 class="text-lg mb-3">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row">
+      {{ range first 3 (where .Site.RegularPages "Type" "post")}}
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          {{ .Scratch.Set "blog" false }}
+          {{ .Render "post" }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="text-center mt-5">
+      <a href="/blog" class="btn btn-main">All Posts</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Contact -->
+{{ if .Site.Data.homepage.contact.enable }}
+{{ with .Site.Data.homepage.contact }}
+<section class="section contact bg-grey" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-8">
+        <div class="section-heading text-center">
+          <h2 class="mb-2 text-lg">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      {{ range .contactItem }}
+      <div class="col-lg-4 col-sm-6">
+        <div class="contact-info-block text-center mb-4">
+          <i class="{{ .icon }}"></i>
+          <p class="mb-0">{{ .title | markdownify }}</p>
+          {{ range .list }}
+          <h5>{{ .listItem }}</h5>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}
