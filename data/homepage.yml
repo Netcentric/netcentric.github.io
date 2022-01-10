@@ -3,7 +3,7 @@ banner:
   enable : true
   title : "We ❤️ Open Source"
   image : "images/about/book.png"
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis lacinia justo, at consequat quam viverra vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam non porta urna, ac pulvinar odio. Curabitur hendrerit blandit faucibus."
+  content : "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects."
   cta:
     text: "Checkout our repos"
     link: "https://github.com/orgs/Netcentric/repositories"
