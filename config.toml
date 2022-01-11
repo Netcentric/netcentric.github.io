@@ -1,19 +1,13 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "/"
 languageCode = "en-us"
 title = "Netcentric Open Source"
 theme = "influencer-hugo"
 summaryLength = "10"
-paginate = 6
+paginate = 10
 
 ############################# Plugins ##############################
 [params.plugins]
-
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
 
 ############################## navigation ###############################
 [menu]

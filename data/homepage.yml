@@ -13,21 +13,15 @@ featured:
   enable : true
   title: "Featured Projects"
   featuredItem:
-    # service item loop
     - title : "HTL Style Guide"
-      icon : "ti-wand" # themify icon pack : https://themify.me/themify-icons
       content : "A style guide for the HTML Template Language (HTL), the templating language use by the Adobe Experience Manager "
       link: "https://github.com/Netcentric/aem-htl-style-guide"
 
-    # service item loop
     - title : "Access Control Tool"
-      icon : "ti-user" # themify icon pack : https://themify.me/themify-icons
       content : "Rights and roles management for Adobe Experience Manager made easy."
       link : "https://github.com/Netcentric/accesscontroltool"
 
-    # service item loop
     - title : "Front End Build"
-      icon : "ti-settings" # themify icon pack : https://themify.me/themify-icons
       content : "All in one solution for modern Frontend projects, with special focus on AEM (Adobe Experience Manager)"
       link : "https://github.com/Netcentric/fe-build"
 
