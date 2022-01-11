@@ -1,24 +1,5 @@
 # Netcentric Open Source Site
 
-## To Do
-
-- [x] Import theme
-- [x] Create Page / Blog structure
-- [x] Add basic NC values to configuration
-- [x] Add NC Logo
-- [x] Add Homepage content
-- [x] Add Homepage meta description
-- [x] Add Homepage meta title
-- [x] Add footer links back to NC site
-- [x] Add link to Github Org
-- [x] Add About content
-- [x] Remove demo content
-- [x] Remove demo content images
-- [ ] Add some NC color touches
-- [ ] Get rid of the SAsS mixins for transforms, etc.
-- [ ] See if we can unused JS/CSS
-- [ ] Performance checks
-
 ## Contribute
 
 1. Clone the repository
@@ -27,6 +8,8 @@
 4. Open a PR
 
 ### Install Hugo
+
+This site is built using [Hugo](https://gohugo.io/).
 
 ```bash
 brew install hugo
