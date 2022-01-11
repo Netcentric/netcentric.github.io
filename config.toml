@@ -6,6 +6,11 @@ theme = "influencer-hugo"
 summaryLength = "10"
 paginate = 10
 
+[caches]
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "10s"
+
 ############################# Plugins ##############################
 [params.plugins]
 
