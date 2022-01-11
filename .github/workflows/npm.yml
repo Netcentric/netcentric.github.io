@@ -14,8 +14,6 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
-      - name: Install dependencies
-        run: npm ci
       - name: Build Hugo
         uses: chabad360/hugo-gh-pages@v2
         with:

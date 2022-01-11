@@ -56,7 +56,7 @@
 <!-- Projects -->
 {{ if .Site.Data.homepage.projects.enable }}
 {{ with .Site.Data.homepage.projects }}
-<section class="section chapter" id="chapter">
+<section class="section">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -66,16 +66,36 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      {{ range .project }}
-      <div class="col-sm-6">
-        <div class="chapter-item">
-          <a href="{{ .link | safeURL }}" >
-          <h4>{{ .title | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
-          </a>
+
+
+    <div class="card-group">
+      {{ range $index, $repo := (getJSON "https://api.github.com/orgs/Netcentric/repos") }}
+        <div class="card mr-4 mb-4 repo-card">
+          <div class="card-body">
+            <h5 class="card-title repo-title">
+              <a href="{{ $repo.html_url | safeURL }}" title="{{ $repo.full_name | markdownify }}" rel="noopener" class="text-danger">
+                {{ $repo.full_name | markdownify }}
+              </a>
+            </h5>
+            <p class="card-text">{{ $repo.description | markdownify }}</p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="d-inline-block mr-3">
+                <i class="ti-star mr-1"></i> {{ $repo.stargazers_count }}
+              </span>
+              {{ if gt $repo.forks_count 0 }}
+                <span class="d-inline-block">
+                  <i class="ti-github mr-1"></i> {{ $repo.forks_count }}
+                  {{ if gt $repo.forks_count 1 }}forks{{ else }}fork{{ end }}
+                </span>
+              {{ end }}
+            </div>
+          </div>
         </div>
-      </div>
+        {{ if eq (mod (add ($index) 1) 2) 0 }}
+          </div><div class="card-group">
+        {{ end }}
       {{ end }}
     </div>
   </div>

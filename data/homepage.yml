@@ -3,7 +3,7 @@ banner:
   enable : true
   title : "We ❤️ Open Source"
   image : "images/about/book.png"
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis lacinia justo, at consequat quam viverra vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam non porta urna, ac pulvinar odio. Curabitur hendrerit blandit faucibus."
+  content : "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects."
   cta:
     text: "Checkout our repos"
     link: "https://github.com/orgs/Netcentric/repositories"
@@ -11,7 +11,7 @@ banner:
 ########################## Featured Projects ##############################
 featured:
   enable : true
-  title: "Featured projects"
+  title: "Featured Projects"
   featuredItem:
     # service item loop
     - title : "HTL Style Guide"
@@ -34,73 +34,8 @@ featured:
 ######################### projects ##########################
 projects:
   enable : true
-  title : "Might Also Interest you"
+  title : "Our Projects"
   subtitle : "We have a long list of open source projects"
-  project:
-
-    - title : "Pickaxe Security Scanner"
-      content : "A fast and customizable security scan library"
-      link : "https://github.com/Netcentric/pickaxe-security-scanner"
-
-    - title : "Stylelint-config"
-      content : "Netcentric's coding and style rules for Stylelint"
-      link : "https://github.com/Netcentric/stylelint-config"
-
-    - title : "NPM Package Template"
-      content : "Template repo for NPM packages"
-      link : "https://github.com/Netcentric/npm-package-template"
-
-    - title : "AEM Cloud Validator"
-      content : "Jackrabbit FileVault validator which verifies that a package complies with the AEM as a Cloud Service deployment restrictions"
-      link : "https://github.com/Netcentric/aem-cloud-validator"
-
-    - title : "Healthcheck Migration Kit"
-      content : "Allows to migrate an AEM 6.4/6.5 instance to Felix Health Checks"
-      link : "https://github.com/Netcentric/healthcheck-migration-kit"
-
-    - title : "Vault Upgrade Hook"
-      content : "An easy way to add additional logic to the installation of content packages."
-      link : "https://github.com/Netcentric/vault-upgrade-hook"
-
-    - title : "AEM Node Types"
-      content : "Provides a CND file with all Node Types and Namespaces defined in AEM"
-      link : "https://github.com/Netcentric/aem-nodetypes"
-
-    - title : "AEM Classification"
-      content : "Validator and classification maps for AEM Content Classification"
-      link : "https://github.com/Netcentric/aem-classification"
-
-    - title : "AEM Taggable Image"
-      content : "Taggable Image Component for Adobe Experience Manager"
-      link : "https://github.com/Netcentric/aem-taggable-image"
-
-    - title : "Apply Server"
-      content : "Deploy to servers/run scripts on servers via http"
-      link : "https://github.com/Netcentric/apply-server"
-
-    - title : "Maven-ext-repos-from-env"
-      content : "Allows to auto-configure maven repositories from system environment"
-      link : "https://github.com/Netcentric/maven-ext-repos-from-env"
-
-    - title : "System env install hook"
-      content : "Elastic AEM instances made easy."
-      link : "https://github.com/Netcentric/system-env-install-hook"
-
-    - title : "Cloudformation IAC"
-      content : "CloudFormation framework for AWS based project infrastructure"
-      link : "hhttps://github.com/Netcentric/cloudformation-iac"
-
-    - title : "AEMMJML"
-      content : "mjml for Adobe Experience Manager"
-      link : "https://github.com/Netcentric/aemmjml"
-
-    - title : "ProgUX"
-      content : "A Progressive User Experience Library."
-      link : "https://github.com/Netcentric/progux"
-
-    - title : "ProgUX Demo Site"
-      content : "Documentation/marketing website for ProgUX Library"
-      link : "https://github.com/Netcentric/progux-demo-site"
 
 ################################ Blog ###################################
 blog:

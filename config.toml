@@ -59,7 +59,7 @@ paginate = 6
 logo = "images/netcentric-logo.svg"
 home = "Home"
 # Meta data
-description = ""
+description = "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects..."
 author = "Themefisher"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID

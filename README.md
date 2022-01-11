@@ -1,6 +1,4 @@
-# netcentric.github.io
-
-Netcentric Open Source Site
+# Netcentric Open Source Site
 
 ## To Do
 
@@ -8,16 +6,16 @@ Netcentric Open Source Site
 - [x] Create Page / Blog structure
 - [x] Add basic NC values to configuration
 - [x] Add NC Logo
-- [ ] Add some NC color touches
-- [ ] Add Homepage content
-- [ ] Add Homepage meta description
-- [ ] Add Homepage meta title
+- [x] Add Homepage content
+- [x] Add Homepage meta description
+- [x] Add Homepage meta title
 - [x] Add footer links back to NC site
-- [ ] Add link to Github Org
-- [ ] Add About content
-- [ ] Add Projects Content
-- [ ] Remove demo content
+- [x] Add link to Github Org
+- [x] Add About content
+- [x] Remove demo content
 - [x] Remove demo content images
+- [ ] Add some NC color touches
+- [ ] Get rid of the SAsS mixins for transforms, etc.
 - [ ] See if we can unused JS/CSS
 - [ ] Performance checks
 
