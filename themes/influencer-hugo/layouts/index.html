@@ -11,7 +11,7 @@
         <div class="main-banner">
           <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
           <p class="mb-4">{{ .content | markdownify }}</p>
-          <a title="{{ .cta.text }}" class="snipcart-add-item btn btn-main mt-2" href="{{ .cta.link }}" rel="noopener">
+          <a title="{{ .cta.text }}" class="btn btn-primary mt-2" href="{{ .cta.link }}" rel="noopener">
             {{ .cta.text }} <i class="ti-angle-right ml-3"></i>
         </a>
         </div>
@@ -37,10 +37,9 @@
     <div class="row align-items-center">
       {{ range .featuredItem }}
       <div class="col-lg-4 col-md-6 col-sm-6">
-        <a href="{{ .link | safeURL }}" >
-        <div class="service-block mb-4 mb-lg-0">
-          <i class="{{ .icon }} text-danger"></i>
-          <h4 class="mb-3 mt-4">{{ .title | markdownify }}</h4>
+        <a class="featured-link" href="{{ .link | safeURL }}" >
+        <div class="featured-block mb-4 mb-lg-0">
+          <h3 class="mb-3 mt-4">{{ .title | markdownify }}</h3>
           <p class="mb-0">{{ .content | markdownify }}</p>
         </div>
       </a>
@@ -67,35 +66,37 @@
       </div>
     </div>
 
+
     <div class="card-group">
-      {{ $.Scratch.Set "$index" 0 }}
-      {{ $repo := (getJSON "https://api.github.com/orgs/Netcentric/repos") }}
-      {{ range sort $repo "stargazers_count" "desc"}}
-      {{ $.Scratch.Set "$index" (add ($.Scratch.Get "$index") 1) }}
+      {{ range $index, $repo := (getJSON "https://api.github.com/orgs/Netcentric/repos") }}
         <div class="card mr-4 mb-4 repo-card">
           <div class="card-body">
-            <h5 class="card-title repo-title">
-              <a href="{{ .html_url | safeURL }}" title="{{ .full_name | markdownify }}" rel="noopener" class="text-danger">
-                {{ .full_name | markdownify }}
+            <h3 class="h4 card-title repo-title">
+              <a href="{{ $repo.html_url | safeURL }}" title="{{ $repo.full_name | markdownify }}" rel="noopener">
+                {{ replace $repo.full_name "Netcentric/" "" | markdownify }}
               </a>
-            </h5>
-            <p class="card-text">{{ .description | markdownify }}</p>
+            </h3>
+            <p class="card-text">{{ $repo.description | markdownify }}</p>
           </div>
           <div class="card-footer">
-            <div>
-              <span class="d-inline-block mr-3">
-                <i class="ti-star mr-1"></i> {{ .stargazers_count }}
+            <div class="d-flex">
+              <span class="d-flex align-items-center mr-3">
+                <img class="icon mr-2" alt="Star" src="/images/icons/star.svg" />
+                <span class="d-inline-block">{{ $repo.stargazers_count }}</span>
               </span>
-              {{ if gt .forks_count 0 }}
-                <span class="d-inline-block">
-                  <i class="ti-github mr-1"></i> {{ .forks_count }}
-                  {{ if gt .forks_count 1 }}forks{{ else }}fork{{ end }}
+              {{ if gt $repo.forks_count 0 }}
+                <span class="d-flex align-items-center">
+                  <img class="icon mr-2" alt="Github forks" src="/images/icons/github.svg" />
+                  <span>
+                    {{ $repo.forks_count }}
+                    {{ if gt $repo.forks_count 1 }}forks{{ else }}fork{{ end }}
+                  </span>
                 </span>
               {{ end }}
             </div>
           </div>
         </div>
-        {{ if eq (mod ($.Scratch.Get "$index") 2) 0 }}
+        {{ if eq (mod (add ($index) 1) 2) 0 }}
           </div><div class="card-group">
         {{ end }}
       {{ end }}
@@ -122,14 +123,14 @@
     {{ end }}
     <div class="row">
       {{ range first 3 (where .Site.RegularPages "Type" "post")}}
-        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="col-xl-4">
           {{ .Scratch.Set "blog" false }}
           {{ .Render "post" }}
         </div>
       {{ end }}
     </div>
     <div class="text-center mt-5">
-      <a href="/blog" class="btn btn-main">All Posts</a>
+      <a href="/blog" class="btn btn-primary">All Posts</a>
     </div>
   </div>
 </section>
