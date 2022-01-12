@@ -71,37 +71,40 @@
       {{ $.Scratch.Set "$index" 0 }}
       {{ $repo := (getJSON "https://api.github.com/orgs/Netcentric/repos") }}
       {{ range sort $repo "stargazers_count" "desc"}}
-      {{ $.Scratch.Set "$index" (add ($.Scratch.Get "$index") 1) }}
-        <div class="card mr-4 mb-4 repo-card">
-          <div class="card-body">
-            <h3 class="h4 card-title repo-title">
-              <a href="{{ .html_url | safeURL }}" title="{{ .full_name | markdownify }}" rel="noopener">
-                {{ replace .full_name "Netcentric/" "" | markdownify }}
-              </a>
-            </h3>
-            <p class="card-text">{{ .description | markdownify }}</p>
-          </div>
-          <div class="card-footer">
-            <div class="d-flex">
-              <span class="d-flex align-items-center mr-3">
-                <img class="icon mr-2" alt="Star" src="/images/icons/star.svg" />
-                <span class="d-inline-block">{{ .stargazers_count }}</span>
-              </span>
-              {{ if gt .forks_count 0 }}
-                <span class="d-flex align-items-center">
-                  <img class="icon mr-2" alt="Github forks" src="/images/icons/github.svg" />
-                  <span>
-                    {{ .forks_count }}
-                    {{ if gt .forks_count 1 }}forks{{ else }}fork{{ end }}
+        {{ if or (eq .full_name "Netcentric/.github") (eq .full_name "Netcentric/netcentric.github.io") }}
+        {{ else }}
+          {{ $.Scratch.Set "$index" (add ($.Scratch.Get "$index") 1) }}
+            <div class="card mr-4 mb-4 repo-card">
+              <div class="card-body">
+                <h3 class="h4 card-title repo-title">
+                  <a href="{{ .html_url | safeURL }}" title="{{ .full_name | markdownify }}" rel="noopener">
+                    {{ replace .full_name "Netcentric/" "" | markdownify }}
+                  </a>
+                </h3>
+                <p class="card-text">{{ .description | markdownify }}</p>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex">
+                  <span class="d-flex align-items-center mr-3">
+                    <img class="icon mr-2" alt="Star" src="/images/icons/star.svg" />
+                    <span class="d-inline-block">{{ .stargazers_count }}</span>
                   </span>
-                </span>
-              {{ end }}
+                  {{ if gt .forks_count 0 }}
+                    <span class="d-flex align-items-center">
+                      <img class="icon mr-2" alt="Github forks" src="/images/icons/github.svg" />
+                      <span>
+                        {{ .forks_count }}
+                        {{ if gt .forks_count 1 }}forks{{ else }}fork{{ end }}
+                      </span>
+                    </span>
+                  {{ end }}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        {{ if eq (mod ($.Scratch.Get "$index") 2) 0 }}
-          </div><div class="card-group">
-        {{ end }}
+            {{ if eq (mod ($.Scratch.Get "$index") 2) 0 }}
+              </div><div class="card-group">
+            {{ end }}
+          {{ end }}
       {{ end }}
     </div>
   </div>
