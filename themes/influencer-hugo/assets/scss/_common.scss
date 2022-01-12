@@ -58,95 +58,12 @@ Common Styles
     cursor: pointer;
     border: 1px solid transparent;
     transition: all 0.2s ease-in-out;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-transition: all 0.3s ease-in-out !important;
-    -moz-transition: all 0.3s ease-in-out !important;
-    -ms-transition: all 0.3s ease-in-out !important;
-    -o-transition: all 0.3s ease-in-out !important;
     transition: all 0.3s ease-in-out !important;
 
     @include tablet {
         padding: 15px 37px
     }
-}
-
-.btn:focus {
-    box-shadow: none !important
-}
-
-
-.btn-main {
-    border-color: $secondary-color;
-    color: $light;
-    background: $secondary-color;
-
-    &:hover {
-        background: $primary-color;
-        color: $light;
-        border-color: $primary-color;
-    }
-}
-
-
-.btn-main-2 {
-    background: $primary-color;
-    color: $light;
-    border-color: $primary-color;
-
-    &:hover {
-        background: $secondary-color;
-        color: $light;
-        border-color: $secondary-color;
-    }
-}
-
-
-.btn-white {
-    background: $light !important;
-    color: $primary-color;
-    border-color: $light;
-}
-
-
-.btn-border-tp {
-    border-color: $secondary-color;
-    background: transparent;
-    color: $secondary-color;
-
-    &:hover {
-        background: $secondary-color;
-        color: $light !important;
-    }
-}
-
-
-.btn-small {
-    padding: 12px 22px;
-    font-size: 13px;
-}
-
-/*------------------------
- BACKGROUND
-----------------------------*/
-
-a {
-    color: $black;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-a:hover,
-a:focus {
-    outline: none;
-    text-decoration: none;
-    color: $primary-color;
 }
 
 .border-top {
@@ -156,12 +73,6 @@ a:focus {
 .border-bottom {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
 }
-
-
-.text-color-2 {
-    color: $secondary-color;
-}
-
 
 .text-lg {
     font-size: 40px;
@@ -182,7 +93,10 @@ a:focus {
     color: $primary-color;
 }
 
-
+.icon {
+    display: inline;
+    width: 20px;
+}
 
 @include mobile-xs {
     .display-4 {
@@ -199,12 +113,4 @@ a:focus {
         }
     }
 
-}
-
-#snipcart-title {
-    color: white;
-}
-.snip-layout .snip-btn--highlight {
-    color: white !important;
-    @extend .btn-main;
 }

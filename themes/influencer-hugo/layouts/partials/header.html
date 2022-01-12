@@ -1,4 +1,4 @@
-<div class="main-navigation fixed-top site-header pt-0 pt-lg-2" id="mainmenu-area">
+<div class="main-navigation fixed-top site-header pt-0 pt-lg-2 bg-grey" id="mainmenu-area">
   <nav class="navbar navbar-expand-lg pb-0 pb-lg-3">
     <div class="container align-items-center">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
@@ -28,14 +28,6 @@
           </li>
           {{ end }}
         </ul>
-
-        {{ if .Site.Params.navButton.enable }}
-        {{ "<!-- nav btn -->" | safeHTML }}
-          <button class="snipcart-add-item btn btn-border-tp btn-small ml-0 ml-lg-3 mb-3 mb-lg-0" data-item-id="1"
-          data-item-name="{{ .Site.Data.homepage.banner.title | markdownify }}" data-item-image="{{ .Site.Data.homepage.banner.image | absURL }}" data-item-price="{{ .Site.Data.homepage.banner.price }}" data-item-url="/">
-          Purchase now
-        </button>
-        {{ end }}
       </div>
     </div>
   </nav>

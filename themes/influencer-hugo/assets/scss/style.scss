@@ -1,7 +1,6 @@
+@import 'bootstrap/bootstrap.scss';
 
 @import 'variables.scss';
-
-@import 'mixins.scss';
 
 @import 'media-query.scss';
 
@@ -21,9 +20,7 @@
 
 @import 'templates/repos.scss';
 
-@import 'templates/service.scss';
-
-@import 'templates/testimonial.scss';
+@import 'templates/featured.scss';
 
 @import 'templates/blog.scss';
 

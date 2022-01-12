@@ -3,17 +3,31 @@
     <a href="{{ .Permalink }}" title="{{ .Title | markdownify }}"><img src="{{ .Params.Image | relURL }}" alt="{{ .Title | markdownify }}" class="img-fluid w-100" rel="nofollow"></a>
   {{ end }}
   <div class="blog-item-content p-4">
-    <div class="blog-meta mb-2">
-      <span><i class="ti-time mr-2"></i>{{ .PublishDate.Format "02 Jan, 2006" }}</span> <i class="ti-user ml-2"></i>
-      {{ .Params.author.name | title }}
+    <div class="blog-meta d-flex mb-2 small">
+      <span class="d-flex align-items-center text-black mr-4">
+        <img class="icon mr-2" alt="Clock icon" src="/images/icons/clock.svg" />
+        <span class="d-inline-block">{{ .PublishDate.Format "January 02, 2006" }}</span>
+      </span>
+
+      <span class="d-flex align-items-center text-black mr-3">
+        <img class="icon mr-2" alt="Person icon" src="/images/icons/person.svg" />
+        <span class="d-inline-block">
+          by
+          {{ if .Params.author.url }}
+            <a class="text-black" href="{{ .Params.author.url }}" rel="noopener" title="{{ .Params.author.name }}">{{ .Params.author.name }}</a>
+          {{ else }}
+            {{ .Params.author.name }}
+          {{ end }}
+        </span>
+      </span>
     </div>
-    <h4 class="mt-2 mb-3"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+    <h3 class="h4 mt-2 mb-3"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
     <div class="d-block font-italic mb-4">
       {{ .Summary }}..
     </div>
     {{ if .Scratch.Get "blog" }}
       <div class="text-md-right">
-        <a href="{{ .Permalink }}" class="btn btn-main d-block d-md-inline-block" title="{{ .Title | markdownify }}" rel="nofollow">Read post</a>
+        <a href="{{ .Permalink }}" class="btn btn-primary d-block d-md-inline-block" title="{{ .Title | markdownify }}" rel="nofollow">Read post</a>
       </div>
     {{ end }}
   </div>
