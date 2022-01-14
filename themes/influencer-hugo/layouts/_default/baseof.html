@@ -9,7 +9,7 @@
         {{- partial "footer.html" . -}}
         <script>
             console.log("%cOh, hi there! 👋 We're hiring","color:#5a3699; font-size: 16px");
-            console.log("%c👉 {{ .Site.Params.careerssite }}","color:#5a3699; font-size: 13px");
+            console.log("%c👉 {{ .Site.Data.homepage.careers.url }}","color:#5a3699; font-size: 13px");
         </script>
     </body>
 </html>
