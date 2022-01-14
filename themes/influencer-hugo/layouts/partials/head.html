@@ -5,12 +5,6 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with .Site.Params.author }}
   <meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
-  {{ range .Site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .URL | absURL }} ">
-  {{ end }}
-  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ `images/favicons/apple-touch-icon.png` | absURL }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ `images/favicons/favicon-32x32.png` | absURL }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ `images/favicons/favicon-16x16.png` | absURL }}">
@@ -20,4 +14,7 @@
   <meta name="msapplication-TileColor" content="#5a3699">
   <meta name="msapplication-config" content="{{ `images/favicons/browserconfig.xml` | absURL }}">
   <meta name="theme-color" content="#5a3699">
+  {{ with resources.Get "scss/style.scss" | toCSS (dict "outputStyle" "compressed") | postCSS }}
+  <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
 </head>

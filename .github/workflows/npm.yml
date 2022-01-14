@@ -11,10 +11,12 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
           submodules: true
+      - name: Install dependencies
+        run: npm ci
       - name: Build Hugo
-        uses: chabad360/hugo-gh-pages@v2
+        uses: chabad360/hugo-gh-pages@master
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
