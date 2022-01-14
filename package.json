@@ -1,0 +1,22 @@
+{
+  "name": "netcentric.github.io",
+  "version": "1.0.0",
+  "description": "Netcentric Open Source Site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Netcentric/netcentric.github.io.git"
+  },
+  "author": {
+    "name": "Netcentric, A Cognizant Digital Business",
+    "url": "https://www.netcentric.biz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Netcentric/netcentric.github.io/issues"
+  },
+  "homepage": "https://netcentric.github.io/",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "postcss-cli": "^9.1.0"
+  }
+}

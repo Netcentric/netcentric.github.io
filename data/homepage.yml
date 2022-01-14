@@ -1,8 +1,6 @@
 ########################## Banner #############################
 banner:
   enable : true
-  title : "We ❤️ Open Source"
-  image : "images/about/book.png"
   content : "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects."
   cta:
     text: "Checkout our repos"
@@ -33,7 +31,14 @@ projects:
 
 ################################ Blog ###################################
 blog:
-  enable : true
+  enable : false
   title : "Blog"
   subtitle : "Updates and milestones of our open source projects"
   # blog post comes from 'content/blog'
+
+################################ Blog ###################################
+careers:
+  enable : true
+  title : "Careers"
+  subtitle : "Like what you see? We're hiring!"
+  url: "https://www.netcentric.biz/jobs.html"

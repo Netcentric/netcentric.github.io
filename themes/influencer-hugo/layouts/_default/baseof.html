@@ -5,6 +5,11 @@
         {{- partial "preloader.html" . -}}
         {{- partial "header.html" . -}}
         {{- block "main" . }}{{- end }}
+        {{- partial "careers.html" . -}}
         {{- partial "footer.html" . -}}
+        <script>
+            console.log("%cOh, hi there! 👋 We're hiring","color:#5a3699; font-size: 16px");
+            console.log("%c👉 {{ .Site.Params.careerssite }}","color:#5a3699; font-size: 13px");
+        </script>
     </body>
 </html>

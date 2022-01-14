@@ -7,6 +7,8 @@
   }
 
   function _toggleMobileNav() {
+    const ariaExpanded = _$.mobileToggle.getAttribute('aria-expanded') === "true"
+    _$.mobileToggle.setAttribute("aria-expanded", !ariaExpanded);
     _$.navbarCollapse.classList.toggle('show');
   }
 
