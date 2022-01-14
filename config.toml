@@ -24,7 +24,7 @@ maxAge = "10s"
 
   [[menu.main]]
   name = "Blog"
-  URL = "https://www.netcentric.biz/insights/blog.html"
+  URL = "blog"
   weight = 2
 
   [[menu.main]]
