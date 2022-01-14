@@ -1,10 +1,17 @@
 <footer class="footer">
   <div class="container">
     <div class="row footer-btm mt-5 pt-4 border-top">
-      <div class="col-12">
+      <div class="col-12 col-md-10">
         <div class="footer-copy">
           <a href="{{ .Site.Params.copyright.link }}" rel="noopener">{{ .Site.Params.copyright.text | markdownify }}</a>
         </div>
+      </div>
+
+      <div class="col-12 col-md-2">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="{{ .Site.Params.social.twitter }}" title="Netcentric's Twitter"><img class="icon" src="/images/icons/twitter.svg" alt="Twitter"></a></li>
+          <li class="list-inline-item"><a href="{{ .Site.Params.social.linkedin }}" title="Netcentric's LinkedIn"><img class="icon" src="/images/icons/linkedin.svg" alt="LinkedIn"></a></li>
+        </ul>
       </div>
     </div>
   </div>

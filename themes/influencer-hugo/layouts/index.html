@@ -1,7 +1,6 @@
 
 {{ define "main" }}
 
-<!-- Banner -->
 {{ if .Site.Data.homepage.banner.enable }}
 {{ with .Site.Data.homepage.banner }}
 <section class="banner-main py-7" id="banner">
@@ -9,7 +8,7 @@
     <div class="row justify-content-between">
       <div class="col-12">
         <div class="main-banner">
-          <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
+          <h1 class="mb-3 mt-2">We <img class="icon" alt="Heart" src="/images/icons/heart.svg" /> Open Source</h1>
           <p class="mb-4">{{ .content | markdownify }}</p>
           <a title="{{ .cta.text }}" class="btn btn-primary mt-2" href="{{ .cta.link }}" rel="noopener">
             {{ .cta.text }} <i class="ti-angle-right ml-3"></i>
@@ -22,7 +21,6 @@
 {{ end }}
 {{ end }}
 
-<!--Featured -->
 {{ if .Site.Data.homepage.featured.enable }}
 {{ with .Site.Data.homepage.featured }}
 <section class="pt-4 section-bottom" id="service">
@@ -52,7 +50,6 @@
 {{ end }}
 
 
-<!-- Projects -->
 {{ if .Site.Data.homepage.projects.enable }}
 {{ with .Site.Data.homepage.projects }}
 <section class="section">
@@ -65,7 +62,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="card-group">
       {{ $.Scratch.Set "$index" 0 }}
@@ -113,7 +109,6 @@
 {{ end }}
 
 
-<!-- Latest blog -->
 {{ if .Site.Data.homepage.blog.enable }}
 <section class="section blog-home border-top" id="blog">
   <div class="container">
@@ -140,38 +135,6 @@
     </div>
   </div>
 </section>
-{{ end }}
-
-<!-- Contact -->
-{{ if .Site.Data.homepage.contact.enable }}
-{{ with .Site.Data.homepage.contact }}
-<section class="section contact bg-grey" id="contact">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12 col-lg-8">
-        <div class="section-heading text-center">
-          <h2 class="mb-2 text-lg">{{ .title | markdownify }}</h2>
-          <p>{{ .subtitle | markdownify }}</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      {{ range .contactItem }}
-      <div class="col-lg-4 col-sm-6">
-        <div class="contact-info-block text-center mb-4">
-          <i class="{{ .icon }}"></i>
-          <p class="mb-0">{{ .title | markdownify }}</p>
-          {{ range .list }}
-          <h5>{{ .listItem }}</h5>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
 {{ end }}
 
 {{ end }}

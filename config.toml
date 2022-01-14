@@ -18,25 +18,24 @@ maxAge = "10s"
 [menu]
 
   [[menu.main]]
-  name = "About"
-  URL = "about"
+  name = "Projects"
+  URL = "https://github.com/orgs/Netcentric/repositories"
   weight = 1
 
   [[menu.main]]
-  name = "Projects"
-  URL = "https://github.com/orgs/Netcentric/repositories"
+  name = "Blog"
+  URL = "https://www.netcentric.biz/insights/blog.html"
   weight = 2
+
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 3
 
   [[menu.main]]
   name = "Code of Conduct"
   URL = "code-of-conduct"
-  weight = 3
-
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
   weight = 4
-
 
 #################### default parameters ################################
 [params]
@@ -45,9 +44,14 @@ home = "Home"
 # Meta data
 description = "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects..."
 author = "Themefisher"
+careerssite = "https://www.netcentric.biz/jobs.html"
 [params.copyright]
   text = "Netcentric, A Cognizant Digital Business"
   link = "https://www.netcentric.biz/"
+
+[params.social]
+  twitter = "https://www.linkedin.com/company/netcentric-a-cognizant-digital-business/"
+  linkedin = "https://www.linkedin.com/company/netcentric-a-cognizant-digital-business/"
 
 # Preloader
 [params.preloader]
