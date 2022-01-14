@@ -31,7 +31,7 @@ projects:
 
 ################################ Blog ###################################
 blog:
-  enable : false
+  enable : true
   title : "Blog"
   subtitle : "Updates and milestones of our open source projects"
   # blog post comes from 'content/blog'
