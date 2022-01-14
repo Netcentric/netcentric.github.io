@@ -44,7 +44,6 @@ home = "Home"
 # Meta data
 description = "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects..."
 author = "Themefisher"
-careerssite = "https://www.netcentric.biz/jobs.html"
 [params.copyright]
   text = "Netcentric, A Cognizant Digital Business"
   link = "https://www.netcentric.biz/"
