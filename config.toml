@@ -6,6 +6,9 @@ theme = "influencer-hugo"
 summaryLength = "10"
 paginate = 10
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [caches]
 [caches.getjson]
 dir = ":cacheDir/:project"
