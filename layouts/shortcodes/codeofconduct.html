@@ -1,0 +1,2 @@
+{{ $resp := getJSON "https://api.github.com/repos/Netcentric/.github/contents/code-of-conduct/README.md" }}
+{{ $resp.content | base64Decode | markdownify }}
