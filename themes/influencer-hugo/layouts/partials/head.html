@@ -14,7 +14,7 @@
   <meta name="msapplication-TileColor" content="#5a3699">
   <meta name="msapplication-config" content="{{ `images/favicons/browserconfig.xml` | absURL }}">
   <meta name="theme-color" content="#5a3699">
-  {{ with resources.Get "scss/style.scss" | toCSS (dict "outputStyle" "compressed") | postCSS }}
+  {{ with resources.Get "scss/style.scss" | toCSS | postCSS | minify }}
   <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 </head>
