@@ -21,7 +21,7 @@
         </span>
       </span>
     </div>
-    <h3 class="h4 mt-2 mb-3"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
+    <h3 class="h4 mt-2 mb-3"><a href="{{ .Permalink }}" title="{{ .Title | markdownify }}">{{ .Title | markdownify }}</a></h3>
     <div class="d-block font-italic mb-4">
       {{ .Summary }}..
     </div>
