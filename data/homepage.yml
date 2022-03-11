@@ -36,7 +36,14 @@ blog:
   subtitle : "Updates and milestones of our open source projects"
   # blog post comes from 'content/blog'
 
-################################ Blog ###################################
+######################### Development Circle ##############################
+developmentcircle:
+  enable : true
+  title : "Development Circle"
+  subtitle : ""
+  url: "https://www.netcentric.biz/insights/jcr:content.blogposts.developer-circle.json"
+
+################################ Careers ###################################
 careers:
   enable : true
   title : "Careers"

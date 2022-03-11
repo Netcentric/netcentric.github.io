@@ -38,4 +38,8 @@
   </div>
 </section>
 
+{{ if .Site.Data.homepage.developmentcircle.enable }}
+  {{- partial "development-circle.html" . -}}
+{{ end }}
+
 {{ end }}
