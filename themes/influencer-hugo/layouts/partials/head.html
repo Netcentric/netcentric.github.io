@@ -2,9 +2,7 @@
   <meta charset="utf-8">
   <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with .Site.Params.author }}
-  <meta name="author" content="{{ . }}">{{ end }}
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ `images/favicons/apple-touch-icon.png` | absURL }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ `images/favicons/favicon-32x32.png` | absURL }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ `images/favicons/favicon-16x16.png` | absURL }}">
@@ -17,4 +15,9 @@
   {{ with resources.Get "scss/style.scss" | toCSS | postCSS | minify }}
   <style>{{ .Content | safeCSS }}</style>
   {{ end }}
+
+  <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}" />
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
 </head>

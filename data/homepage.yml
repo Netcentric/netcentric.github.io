@@ -1,7 +1,7 @@
 ########################## Banner #############################
 banner:
   enable : true
-  content : "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects."
+  content : "At Cognizant Netcentric we value open source and encourage everyone internally and externally to contribute to our projects."
   cta:
     text: "Checkout our repos"
     link: "https://github.com/orgs/Netcentric/repositories"
