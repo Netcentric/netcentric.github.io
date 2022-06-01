@@ -1,6 +1,6 @@
 {
-    "name": "Netcentric",
-    "short_name": "Netcentric",
+    "name": "Cognizant Netcentric",
+    "short_name": "Cognizant Netcentric",
     "start_url": "/",
     "icons": [
         {
@@ -14,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#5a3699",
-    "background_color": "#5a3699",
+    "theme_color": "#2E308E",
+    "background_color": "#2E308E",
     "display": "standalone"
 }

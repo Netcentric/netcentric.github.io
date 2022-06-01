@@ -1,7 +1,7 @@
 {
   "name": "netcentric.github.io",
-  "version": "1.1.0",
-  "description": "Netcentric Open Source Site",
+  "version": "2.0.0",
+  "description": "Cognizant Netcentric Open Source Site",
   "scripts": {
     "format": "prettier --write ./content/**/*.md",
     "prepare": "husky install"
@@ -24,7 +24,7 @@
     "postcss-cli": "^9.1.0"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "prettier": "^2.6.2"
   }
 }

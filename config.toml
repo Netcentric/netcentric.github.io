@@ -1,10 +1,12 @@
 ######################## default configuration ####################
 baseURL = "/"
 languageCode = "en-us"
-title = "Netcentric Open Source"
+title = "Cognizant Netcentric Open Source"
 theme = "influencer-hugo"
 summaryLength = "10"
 paginate = 10
+
+ignoreErrors = ["error-remote-getjson"]
 
 [markup.goldmark.renderer]
 unsafe= true
@@ -42,13 +44,13 @@ maxAge = "10s"
 
 #################### default parameters ################################
 [params]
-logo = "images/netcentric-logo.svg"
+logo = "images/cognizant-netcentric-logo.svg"
 home = "Home"
 # Meta data
-description = "At Netcentric we value open source and encourage everyone internally and externally to contribute to our projects..."
+description = "At Cognizant Netcentric we value open source and encourage everyone internally and externally to contribute to our projects..."
 author = "Themefisher"
 [params.copyright]
-  text = "Netcentric, A Cognizant Digital Business"
+  text = "Cognizant Netcentric"
   link = "https://www.netcentric.biz/"
 
 [params.social]
