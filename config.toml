@@ -44,7 +44,7 @@ maxAge = "10s"
 
 #################### default parameters ################################
 [params]
-logo = "images/netcentric-logo.svg"
+logo = "images/cognizant-netcentric-logo.svg"
 home = "Home"
 # Meta data
 description = "At Cognizant Netcentric we value open source and encourage everyone internally and externally to contribute to our projects..."
