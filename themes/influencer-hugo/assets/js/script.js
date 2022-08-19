@@ -18,10 +18,10 @@
 
   function _init() {
     _setElements();
-   _setEventListeners();
+    _setEventListeners();
 
-   // Syntax highlighter
-   hljs.highlightAll();
+    // Syntax highlighter
+    hljs.highlightAll();
   }
 
   _init();
