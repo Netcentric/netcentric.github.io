@@ -19,6 +19,9 @@
   function _init() {
     _setElements();
    _setEventListeners();
+
+   // Syntax highlighter
+   hljs.highlightAll();
   }
 
   _init();

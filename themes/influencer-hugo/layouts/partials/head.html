@@ -16,6 +16,7 @@
   <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 
+  <link rel="stylesheet" href="/css/highlight.min.css">
   <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}" />
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
