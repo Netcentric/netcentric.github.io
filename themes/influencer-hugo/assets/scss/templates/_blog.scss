@@ -1,3 +1,9 @@
+.single-blog-item {
+	iframe {
+		margin-bottom: 1.5rem;
+	}
+}
+
 .blog-item {
 	box-shadow: 12px 7px 90px 0 rgba(110, 123, 131, 0.1);
 }
@@ -47,8 +53,6 @@
 		}
 	}
 }
-
-
 
 .pagination {
 	.page-item {

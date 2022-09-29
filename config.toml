@@ -14,7 +14,7 @@ unsafe= true
 [caches]
 [caches.getjson]
 dir = ":cacheDir/:project"
-maxAge = "10s"
+maxAge = "120s"
 
 ############################# Plugins ##############################
 [params.plugins]
