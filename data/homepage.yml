@@ -41,7 +41,8 @@ developmentcircle:
   enable : true
   title : "Development Circle"
   subtitle : ""
-  url: "https://www.netcentric.biz/insights/jcr:content.blogposts.developer-circle.json"
+  url: "https://www.netcentric.biz/insights/query-index.json?sheet=github"
+  mainSiteUrl: "https://www.netcentric.biz"
 
 ################################ Careers ###################################
 careers:
