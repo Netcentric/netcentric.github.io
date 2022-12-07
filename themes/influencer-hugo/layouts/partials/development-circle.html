@@ -1,6 +1,7 @@
 <section class="section blog-home border-top" id="developmentcircle">
   <div class="container">
     {{ with .Site.Data.homepage.developmentcircle }}
+    {{ $mainSiteUrl := .mainSiteUrl }}
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <div class="section-heading text-center">
@@ -12,31 +13,31 @@
 
       <div class="card-deck">
         {{ $repo := (getJSON .url) }}
-        {{ range first 3 $repo }}
-          <div class="blog-item card mb-4 border-0">
-            {{ if .image }}
-              <a href="{{ .url }}" title="{{ .title | markdownify }}"><img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100" rel="nofollow"></a>
-            {{ end }}
-            <div class="blog-item-content p-4">
-              <div class="blog-meta mb-2 small">
-                <span class="d-flex align-items-center text-black mr-4">
-                  <img class="icon mr-2" alt="Clock icon" src="/images/icons/clock.svg" />
-                  <span class="d-inline-block">{{ (time .date).Format "January 02, 2006" }}</span>
-                </span>
+          {{ range first 3 $repo.data }}
+            <div class="blog-item card mb-4 border-0">
+              {{ if .image }}
+                <a href="{{ $mainSiteUrl }}{{ .path }}" title="{{ .title | markdownify }}"><img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100" rel="nofollow"></a>
+              {{ end }}
+              <div class="blog-item-content p-4">
+                <div class="blog-meta mb-2 small">
+                  <span class="d-flex align-items-center text-black mr-4">
+                    <img class="icon mr-2" alt="Clock icon" src="/images/icons/clock.svg" />
+                    <span class="d-inline-block">{{ (time .publicationDate).Format "January 02, 2006" }}</span>
+                  </span>
 
-                <span class="d-flex align-items-center text-black mr-3">
-                  <img class="icon mr-2" alt="Person icon" src="/images/icons/person.svg" />
-                  <span class="d-inline-block">by {{ .authors }}</span>
-                </span>
-              </div>
-              <h3 class="h4 mt-2 mb-3"><a href="{{ .url }}" title="{{ .title | markdownify }}">{{ .title | markdownify }}</a></h3>
-              <div class="d-block font-italic mb-4">
-                {{ .excerpt | plainify | truncate 100 }}
+                  <span class="d-flex align-items-center text-black mr-3">
+                    <img class="icon mr-2" alt="Person icon" src="/images/icons/person.svg" />
+                    <span class="d-inline-block">by {{ .authors }}</span>
+                  </span>
+                </div>
+                <h3 class="h4 mt-2 mb-3"><a href="{{ $mainSiteUrl }}{{ .path }}" title="{{ .title | markdownify }}">{{ .title | markdownify }}</a></h3>
+                <div class="d-block font-italic mb-4">
+                  {{ .excerpt | plainify | truncate 100 }}
+                </div>
               </div>
             </div>
-          </div>
-        {{ end }}
-      {{ end }}
-    </div>
+          {{ end }}
+      </div>
+    {{ end }}
   </div>
 </section>
