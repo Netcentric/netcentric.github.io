@@ -16,7 +16,7 @@
           {{ range first 3 $repo.data }}
             <div class="blog-item card mb-4 border-0">
               {{ if .image }}
-                <a href="{{ $mainSiteUrl }}{{ .path }}" title="{{ .title | markdownify }}"><img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100" rel="nofollow"></a>
+                <a href="{{ $mainSiteUrl }}{{ .path }}" title="{{ .title | markdownify }}"><img src="{{ $mainSiteUrl }}{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100" rel="nofollow"></a>
               {{ end }}
               <div class="blog-item-content p-4">
                 <div class="blog-meta mb-2 small">
